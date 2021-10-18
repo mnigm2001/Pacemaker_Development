@@ -1,6 +1,6 @@
 # Pacemaker_Development
 
-This project project, we're developing a pacemaker using an NXP FRDM-K64F microcontroller board and a simulated heart. Using a predefined physical parameters list, my team and I are implementing state flows for various pacemaker modes, in addition to, applying hardware hiding principles using Simulink subsystems. Also, we are in the process of developing an intuitive graphical user interface (GUI) using the Python library PySimpleGui.
+In this project, we're developing a pacemaker using an NXP FRDM-K64F microcontroller board and a simulated heart. Using a predefined physical parameters list, my team and I are implementing state flows for various pacemaker modes, in addition to, applying hardware hiding principles using Simulink subsystems. Also, we are in the process of developing an intuitive graphical user interface (GUI) using the Python library PySimpleGui.
 
 Progress:
 - User Interface:
