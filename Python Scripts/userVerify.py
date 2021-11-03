@@ -15,20 +15,23 @@ def verify(username, password):
     return login 
 
 #%% Register a new user
-def register(username, password):
-    newUser = -1
+def register(username, password, verifyPass):
+    newUser = [False, False]
+    if (password != verifyPass or (" " in password) or password == ""):
+        newUser = [False, True]
+        return newUser
     path = "Users/"
     numUsers = len(os.listdir(path))
     if numUsers < 10:
         users = os.listdir(path)
         for s in range(len(users)): 
             users[s] = users[s].strip(".txt")
-        if (username in users):
-            newUser = 0
+        if (username in users or username == "" or (" " in username)):
+            newUser = [True, False]
         else:
             name = path + username +".txt"
             file = open(name, "w")
             file.write(password)
             file.close()
-            newUser = 1
+            newUser = [True, True]
     return newUser
